@@ -74,7 +74,7 @@ body {
     position: relative;
 
     &__email {
-        padding: 1.6rem 2.2rem 1.4rem;
+        padding: 1.6rem 7rem 1.4rem 2.2rem;
         width: 100%;
         font-family: inherit;
         font-size: 1.4rem;
@@ -82,6 +82,7 @@ body {
         background-color: transparent;
         border: 0.1rem solid rgba($color-desaturated-red, 0.5);
         border-radius: 10rem;
+        transition: padding .3s;
 
         &::placeholder {
             color: rgba($color-desaturated-red, 0.5);
@@ -142,6 +143,7 @@ body {
 .error {
     .subscribe {
         &__email {
+            padding: 1.6rem 11rem 1.4rem 2.2rem;
             border: 0.1rem solid $color-soft-red;
         }
 
@@ -217,7 +219,7 @@ body {
         grid-area: 1 / 1 / 3 / 3;
         display: block;
         background: url('../images/bg-pattern-desktop.svg') no-repeat, $gradient1;
-        background-size: 100%;
+        background-size: 100% 100%;
         z-index: -1;
     }
 
@@ -270,6 +272,25 @@ body {
 
         &__info {
             margin-left: 3rem;
+        }
+    }
+
+    .error {
+        .subscribe {
+            &__email {
+                padding: 2.2rem 16rem 1.8rem 3rem ;
+                border: 0.1rem solid $color-soft-red;
+            }
+    
+            &__error-icon {
+                visibility: visible;
+                opacity: 1;
+            }
+    
+            &__info {
+                visibility: visible;
+                opacity: 1;
+            }
         }
     }
 }
