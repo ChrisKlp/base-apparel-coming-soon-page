@@ -23,23 +23,6 @@ body {
     font-size: 1.6rem;
     min-height: 100vh;
     background: $gradient1;
-
-    &::after {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 1;
-        background-repeat: no-repeat;
-        // content: '';
-        background-image: url('../design/active-states.jpg');
-        // background-image: url('../design/mobile-design.jpg');
-    }
-}
-
-.wrapper {
-    overflow: hidden;
 }
 
 .header {

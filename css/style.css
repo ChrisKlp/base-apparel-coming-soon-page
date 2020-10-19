@@ -18,21 +18,6 @@ body {
   background: linear-gradient(135deg, white, #fff5f5);
 }
 
-body::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 1;
-  background-repeat: no-repeat;
-  background-image: url("../design/active-states.jpg");
-}
-
-.wrapper {
-  overflow: hidden;
-}
-
 .header {
   padding: 3rem 8.5vmin;
 }
