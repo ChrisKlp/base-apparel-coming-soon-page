@@ -25,6 +25,10 @@ body {
     background: $gradient1;
 }
 
+.background {
+    display: none;
+}
+
 .header {
     padding: 3rem 8.5vmin;
 
@@ -204,12 +208,17 @@ body {
 }
 
 @media (min-width: 992px) {
-    body {
-        background: url('../images/bg-pattern-desktop.svg'), $gradient1;
-    }
     .wrapper {
         display: grid;
         grid: auto 1fr / 1fr 3.5% 42.5%;
+    }
+
+    .background {
+        grid-area: 1 / 1 / 3 / 3;
+        display: block;
+        background: url('../images/bg-pattern-desktop.svg') no-repeat, $gradient1;
+        background-size: 100%;
+        z-index: -1;
     }
 
     .header {
